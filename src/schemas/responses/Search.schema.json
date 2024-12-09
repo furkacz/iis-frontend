@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "/schemas/responses/Search.schema.json",
+  "title": "Search",
+  "description": "Result of a search query.",
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "prev": {
+            "type": "string"
+          },
+          "data": {
+            "type": "string"
+          },
+          "next": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "data",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "query",
+    "results"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "/schemas/requests/Add.schema.json",
+  "title": "Add",
+  "description": "Request to add the text to the search database.",
+  "type": "string"
+}

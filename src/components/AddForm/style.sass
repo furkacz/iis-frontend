@@ -1,0 +1,74 @@
+.AddForm
+    display: flex
+    flex-direction: column
+    gap: 1em
+    width: 100%
+    max-width: 60rem
+    min-width: 30rem
+    padding: 1rem
+    border-radius: 3rem 3rem 2rem 2rem
+    background-color: $color__dark--2
+
+    &__row
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 100%
+        gap: 0.5em
+
+        &--input
+            outline: none
+            background: none
+            box-shadow: none
+            border: none
+            flex-grow: 1
+            width: 100%
+            height: 2rem
+            padding-left: 1rem
+            border-radius: 2rem
+            background-color: $color__dark--3
+            color: $color__light--1
+            line-height: 1em
+            font-size: 1em
+            font-weight: 400
+            font-style: italic
+
+            &:focus
+                background-color: $color__dark--4
+
+        &--button
+            height: 2rem
+            aspect-ratio: 1 / 1
+            margin: 0
+            padding: 0
+            border: none
+            background-color: transparent
+
+            &-img
+                width: 100%
+                height: 100%
+
+        &--textarea
+            field-sizing: content
+            resize: none
+            outline: none
+            background: none
+            box-shadow: none
+            border: none
+            box-sizing: border-box
+            width: 100%
+            min-height: 10rem
+            padding: 1.25rem
+            border-radius: 2rem
+            background-color: $color__dark--3
+            color: $color__light--1
+            line-height: 1em
+            font-size: 1em
+            font-weight: 400
+            font-style: italic
+
+            &:focus
+                background-color: $color__dark--4
+
+.rotated
+    transform: rotate(45deg)

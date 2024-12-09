@@ -1,0 +1,60 @@
+.SearchBar
+    max-width: 60rem
+    min-width: 30rem
+    width: 100%
+    height: 4rem
+    padding-left: 2rem
+    border-radius: 4rem
+    background-color: $color__dark--2
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+
+    &__input
+        width: 100%
+        flex-grow: 1
+        margin-left: -1rem
+
+        &--box
+            outline: none
+            background: none
+            box-shadow: none
+            border: none
+            width: 100%
+            height: 100%
+            color: $color__light--1
+            line-height: 2em
+            font-size: 2em
+            font-weight: 400
+            font-style: italic
+
+    &__reset
+        height: 100%
+        aspect-ratio: 3 / 4
+
+        &-image
+            width: 100%
+            height: 100%
+            filter: brightness(0.95)
+
+    &__search
+        height: 100%
+        aspect-ratio: 1 / 1
+
+        &-button
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            margin: 0
+            padding: 0
+            border: none
+            background-color: transparent
+
+            &-image
+                width: 75%
+                height: 75%
+                margin: 12.5%
+                filter: brightness(0.95)
+
+.focused
+    background-color: $color__dark--3
