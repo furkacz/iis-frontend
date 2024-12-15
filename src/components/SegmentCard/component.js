@@ -7,6 +7,7 @@ export default {
   },
   props: {
     source: String,
+    score: Number,
     segment: String,
   },
 };
