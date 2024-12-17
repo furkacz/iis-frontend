@@ -1,7 +1,7 @@
 <template>
   <div class="SegmentList" v-if="shouldDisplay">
     <SegmentCard class="SegmentList__card" v-for="segment in segmentsList"
-      :segment="segment.data" :score="segment.score" :source="segment.url" :key="segment.id" />
+      :segment="segment.data" :score="segment.score ?? -1" :source="segment.url ?? ''" :key="segment.id" />
   </div>
 </template>
 
